@@ -4,6 +4,11 @@
 
 [text](https://youtu.be/viffvWtMTdo)
 
+## Extentions 
+- Tiling Shell (Tiling Assitent - Windows Like)
+
+[Text](https://extensions.gnome.org/extension/7065/tiling-shell/)
+
 ## Theam Pack 
 
 - Go to Home Derectory and Past  `.themes` folder and `.icons` folder 
