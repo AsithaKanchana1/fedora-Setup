@@ -94,11 +94,16 @@ There are two Option
 
 #### ble.sh installation
 ```bash
-git clone https://github.com/akinomyoga/ble.sh.git ~/.local/share/blesh
+curl -L https://github.com/akinomyoga/ble.sh/releases/download/nightly/ble-nightly.tar.xz | tar xJf -
+bash ble-nightly/ble.sh --install ~/.local/share
 echo 'source ~/.local/share/blesh/ble.sh' >> ~/.bashrc
-```
-Restart Terminal and it will apply
 
+```
+Optional 
+Restart bash terminal
+```bash
+source ~/.bashrc
+```
 
 #### zhs installation
 ```bash
