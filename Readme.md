@@ -3,6 +3,7 @@
 [text](https://youtu.be/AE1-W2bMVEs)
 
 [text](https://youtu.be/viffvWtMTdo)
+
 ## Dependencies 
 - Codec Install 
 
@@ -32,6 +33,15 @@ Change Theams in GNOME Tweeks app
 # After CTT Linux Utility Installation 
 
 - Install Alacrity  
+## Softwares 
+- Edge (Good For Ms Online Apps ,PDF Reader)
+```bash
+flatpak install flathub com.microsoft.Edge
+```
+- vlc 
+```bash 
+flatpak install flathub org.videolan.VLC
+```
 
 ## Open Alacrity in File Manager 
 ### To Set Alacrity as default Teminal in File manager 
