@@ -86,3 +86,27 @@ tmux "Tabs" (Windows)
 
 - List tabs: `Ctrl+b, then w`
 
+### Enable Auto Sudjetions 
+
+There are two Option 
+- zsh
+- bash (ble.sh) ---- Currently Using
+
+#### ble.sh installation
+```bash
+git clone https://github.com/akinomyoga/ble.sh.git ~/.local/share/blesh
+echo 'source ~/.local/share/blesh/ble.sh' >> ~/.bashrc
+```
+Restart Terminal and it will apply
+
+
+#### zhs installation
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+```
+
+Add to your .zshrc 
+```bash 
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+```
+
