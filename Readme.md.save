@@ -34,8 +34,8 @@ Change Theams in GNOME Tweeks app
 - Install Alacrity  
 
 ## Open Alacrity in File Manager 
-### To Set Alacrity as default Teminal in File manager 
 
+### To set Alacrity a default terminal in File manager
 Install Extention For GNOME
 
 ```bash
@@ -56,33 +56,15 @@ Restart Nautilus to apply the changes
 nautilus -q
 ```
 
-### To Set Tabs Like Option on Teminal
+### Install tmux inside Alacrity 
+since Alacrity dosen't support Tabs we need to us `tmux` to add that feture 
 
-Lets Use tmux 
-- Installation (fedora)
+- for fedora 
 ```bash 
 sudo dnf install tmux
 ```
-- Verification
-```bash
+- to verify tmux 
+```bash 
 tmux -V
 ```
-- To Set Open `tmux` every time Alacrity Open Edit `/home/asitha/.config/alacritty/alacritty.toml` file and 
-add following Line to bottom of the page 
-
-```bash
-[terminal.shell]
-program = "tmux"
-```
-#### `tmux` Usage 
-
-tmux "Tabs" (Windows)
-
-- New tab: `Ctrl+b, then c`
-
-- Next tab: `Ctrl+b, then n`
-
-- Prev tab: `Ctrl+b, then p`
-
-- List tabs: `Ctrl+b, then w`
 
