@@ -42,7 +42,8 @@ flatpak install flathub com.microsoft.Edge
 ```bash 
 flatpak install flathub org.videolan.VLC
 ```
-
+- mySql WorkBench
+I have created another markdown for this 
 ## Open Alacrity in File Manager 
 ### To Set Alacrity as default Teminal in File manager 
 
