@@ -149,3 +149,13 @@ Step 5: Restart Android Studio
 
 Step 6: Reboot System (if all else fails)
 - Sometimes, stubborn background processes or OS-level resource locks require a full reboot to clear.
+
+##### after doing all of above things it worked but when i restart it need to be done again otherwise it will crash
+- so the sudjest solution was
+	- give nessosry permission 
+	```bash 
+chmod -R u+rw ~/.var/app/com.google.AndroidStudio/
+chown -R $USER ~/.var/app/com.google.AndroidStudio/
+```
+	- install android srudio via official site (flatpack and snap version some times has problem since thay run app in sandbox env )
+	- keep android studio upto date
