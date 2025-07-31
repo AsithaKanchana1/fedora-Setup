@@ -1,6 +1,5 @@
 # Fedora My Theams 
 
-[text](https://youtu.be/AE1-W2bMVEs)
 
 [text](https://youtu.be/viffvWtMTdo)
 
@@ -12,9 +11,24 @@ sudo dnf install libavcodec-freeworld
 ```
 
 ## Extentions 
+- Extention Manager (By Mattive Jakman [Blue icon])
 - Tiling Shell (Tiling Assitent - Windows Like)
+- Blur My Shell ( Blure Background )
+- Dash to Dock (Mac Like Dock)
+- Dash to task bar (Windows Like )
+- App icon Taskbar [Not shure what is purpus]
+- Clipboard indicator (clip board manager)
+- Gnome Fuzzy App Search (Fuzzy Search )
+- Quick Settings Tweeks [Not shure]
+- Tiling shell (advanced tiling window manager ,win 11 snap assitent ,Fanzy zone , Automatic tilting,etc)
+- Window lits (add window list to bottom of the page )[not my fav]
+- User Theam
+- Custom accesnt Color 
+    - [Dependencese - User Theam Extention]
+- Appindicator and KSstatusNotifireiterm Support
+- vitals
 
-[Text](https://extensions.gnome.org/extension/7065/tiling-shell/)
+[Extention website](https://extensions.gnome.org/extension/7065/tiling-shell/)
 
 ## Theam Pack 
 
@@ -42,8 +56,26 @@ flatpak install flathub com.microsoft.Edge
 ```bash 
 flatpak install flathub org.videolan.VLC
 ```
-- mySql WorkBench
+- [mySql WorkBench](/mysql-work-bench.md)
 I have created another markdown for this 
+
+- [Android studio](/android-studio-setup.md)
+
+- [Davinchi Resolve](/davinci-resolve-install.md) 
+# Alacrity 
+## Config file
+i have added current alacrity config files to 
+- [Alacrity file](/config/alacrity)
+
+to add those follow instructions
+change `asitha` to your user name 
+- Add folowing files to `/home/asitha/.config/alacritty` 
+    - alacrity.toml
+- Give permissions to the file 
+```bash
+chown $USER:$USER ~/.config/alacritty/*
+```
+
 ## Open Alacrity in File Manager 
 ### To Set Alacrity as default Teminal in File manager 
 
