@@ -47,17 +47,61 @@ Change Theams in GNOME Tweeks app
 # After CTT Linux Utility Installation 
 
 - Install Alacrity  
+- 
 ## Softwares 
-- Edge (Good For Ms Online Apps ,PDF Reader)
+- Need to install Following Dependencies
+
+- Enable RPM Fusion 
 ```bash
-flatpak install flathub com.microsoft.Edge
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
-- vlc 
+
+- Brave Browser Repo
+```bash
+sudo dnf install dnf-plugins-core
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+```
+- Microsoft Edge Repo
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge
+```
+- Github Desktop Repo
+```bash
+sudo rpm --import https://rpm.packages.shiftkey.dev/gpg.key
+sudo sh -c 'echo -e "[shiftkey-packages]\nname=GitHub Desktop\nbaseurl=https://rpm.packages.shiftkey.dev/rpm/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://rpm.packages.shiftkey.dev/gpg.key" > /etc/yum.repos.d/shiftkey-packages.repo'
+```
+
+- EduVPN Repo
 ```bash 
-flatpak install flathub org.videolan.VLC
+curl -O https://app.eduvpn.org/linux/v4/rpm/app+linux@eduvpn.org.asc
+sudo rpm --import app+linux@eduvpn.org.asc
+cat << 'EOF' | sudo tee /etc/yum.repos.d/python-eduvpn-client_v4.repo
+[python-eduvpn-client_v4]
+name=eduVPN for Linux 4.x (Fedora $releasever)
+baseurl=https://app.eduvpn.org/linux/v4/rpm/fedora-$releasever-$basearch
+gpgcheck=1
+EOF
 ```
+- FlareGet Download Manager
+```bash
+wget https://dl.flareget.com/downloads/files/flareget/rpm/amd64/flareget-5.0-0.x86_64.rpm
+sudo dnf install ./flareget-5.0-0.x86_64.rpm
+```
+
+- Install following apps in one command
+    - smplayer
+    - vlc
+    - brave browser
+    - microsoft edge
+    - obs
+    -eduvpn
+    - firefox
+    - vs code
+    - github desktop
+### Complex Installations 
 - [mySql WorkBench](/mysql-work-bench.md)
-I have created another markdown for this 
 
 - [Android studio](/android-studio-setup.md)
 
