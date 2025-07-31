@@ -100,6 +100,9 @@ sudo dnf install ./flareget-5.0-0.x86_64.rpm
     - firefox
     - vs code
     - github desktop
+```bash
+sudo dnf install -y smplayer vlc brave-browser microsoft-edge-stable obs-studio eduvpn-client firefox code github-desktop
+```
 ### Complex Installations 
 - [mySql WorkBench](/mysql-work-bench.md)
 
