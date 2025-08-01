@@ -1,8 +1,11 @@
 # Fedora My Theams 
+This Project is for My Personal Use But If Some one can get Help from it all of you are welcome 
 
 ## Usefull Links 
-[Cris Titus Tech Linux Utility](https://github.com/ChrisTitusTech/linutil.git)
-[text](https://youtu.be/viffvWtMTdo)
+- [Cris Titus Tech Linux Utility](https://github.com/ChrisTitusTech/linutil.git)
+- [Video](https://youtu.be/viffvWtMTdo)
+
+- [Git Credential Manager](/git-credential-manager.md)
 
 ## Dependencies 
 - Codec Install 
