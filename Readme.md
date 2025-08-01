@@ -16,6 +16,7 @@ sudo dnf install libavcodec-freeworld
 - Tiling Shell (Tiling Assitent - Windows Like)
 - Blur My Shell ( Blure Background )
 - Dash to Dock (Mac Like Dock)
+    - Dash To Dock animated (animated Mack Dock)
 - Dash to task bar (Windows Like )
 - App icon Taskbar [Not shure what is purpus]
 - Clipboard indicator (clip board manager)
@@ -28,6 +29,9 @@ sudo dnf install libavcodec-freeworld
     - [Dependencese - User Theam Extention]
 - Appindicator and KSstatusNotifireiterm Support
 - vitals
+- Open Bar (Top Bar Custermization)
+    - [Download Them File](/config/openbar)
+
 
 [Extention website](https://extensions.gnome.org/extension/7065/tiling-shell/)
 

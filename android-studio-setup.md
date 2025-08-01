@@ -1,5 +1,51 @@
-# After installation 
-android studio has an problem when USB debbuging enabled phone connected it dosent show in android studio divices 
+# Android Studio Install
+## Installation
+- Install Prerequesists
+```bash
+sudo dnf install zlib.i686 ncurses-libs.i686 bzip2-libs.i686
+```
+if error preseits
+```bash
+sudo dnf install zlib-ng-compat.i686
+sudo dnf install ncurses-libs.i686 bzip2-libs.i686
+
+```
+- Download Android Studio from Website
+[Download](https://developer.android.com/studio)
+- Extract it
+```bash
+cd ~/Downloads
+tar -xvzf android-studio-*-linux.tar.gz
+```
+
+- Move it to `/opt/`
+```bash
+sudo mv android-studio /opt/
+```
+- Launch Installer
+```bash
+cd /opt/android-studio/bin
+./studio.sh
+```
+
+## After installation 
+## App Icon Is Not Showing
+This is an problem when android studio installed from downloaded installer (by android studio ) to fix this Follow the steps
+
+- Launch Android Studio Using Terminal 
+```bash
+/opt/android-studio/bin/studio.sh
+```
+- Once Android Studio starts
+
+    - Go to Tools → Create Desktop Entry...
+
+    -In the dialog, check “Create entry for all users” (for system-wide install) or leave unchecked (for just your user).
+
+    -Click OK.
+
+- This action will create an icon/launcher for Android Studio in your application menu.
+## android studio has an problem when USB debbuging enabled phone connected it dosent show in android studio divices 
 
 ## Solution 
 
