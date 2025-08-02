@@ -11,6 +11,7 @@ This Project is for My Personal Use But If Some one can get Help from it all of 
 
 - [System Junk Cleanup](/system-clean.md)
 
+- [Nvim Setup](/nvim-config.md)
 ## Dependencies 
 - Codec Install 
 

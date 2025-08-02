@@ -1,0 +1,12 @@
+{
+  "LuaSnip": { "branch": "master", "commit": "458560534a73f7f8d7a11a146c801db00b081df0" },
+  "blink.cmp": { "branch": "main", "commit": "bae4bae0eedd1fa55f34b685862e94a222d5c6f8" },
+  "blink.compat": { "branch": "main", "commit": "2ed6d9a28b07fa6f3bface818470605f8896408c" },
+  "cmp-dictionary": { "branch": "main", "commit": "fecc3ef2435c2be35818f8fcac4a6c5655f3a8f0" },
+  "cmp-latex-symbols": { "branch": "main", "commit": "86b68e6d6c550442d4a3f826e1b8358c5300824c" },
+  "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "mason-lspconfig.nvim": { "branch": "main", "commit": "844d247d998c2f9a6a3baad8bb9748edc55ce69f" },
+  "mason.nvim": { "branch": "main", "commit": "9e25c98d4826998460926f8c5c2284848d80ae89" },
+  "nvim-lspconfig": { "branch": "master", "commit": "d0dbf489a8810672fa9a61f4a86e5cf89214b772" }
+}
