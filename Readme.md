@@ -68,13 +68,18 @@ sudo dnf install libavcodec-freeworld
 ## Theam Pack 
 
 - Go to Home Derectory and Past  `.themes` folder and `.icons` folder 
-- install Gnome Tweeks app
+- install GNOME Tweaks:
 
 ```bash
-sudo dnf install gnome-tweaks 
+sudo dnf install gnome-tweaks
 ```
 
-Change Theams in GNOME Tweeks app 
+- With GNOME Tweaks You can:
+  - Add minimize and maximize buttons
+  - Customize Animations
+  - etc
+
+Change Theams in GNOME Tweaks app 
 
 - Appearance --> Icons 
 - Appearance --> Legasy Applications
@@ -86,9 +91,35 @@ Change Theams in GNOME Tweeks app
 ## Softwares 
 - Need to install Following Dependencies
 
-- Enable RPM Fusion 
+- Enable RPM Fusion Free repository
 ```bash
-sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+```
+
+- Enable RPM Fusion Non-Free repository
+```bash
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
+
+- Pre Load Apps 
+```bash
+sudo dnf copr enable kylegospo/preload -y && sudo dnf install preload -y && sudo systemctl enable --now preload
+```
+
+- Optimize DNF for Speed:
+```bash
+echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
+echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
+```
+
+- Install Timeshift (System Backups)
+```bash
+sudo dnf install timeshift
+```
+
+- Install DNFDragora Package Manager:
+```bash
+sudo dnf install dnfdragora
 ```
 
 - Brave Browser Repo
