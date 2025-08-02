@@ -2,6 +2,26 @@
 
 This guide provides step-by-step instructions to set up a modern Neovim configuration with LSP, completion, and snippet support from scratch.
 
+## Getting Started
+
+### Prerequisites
+
+Before starting this Neovim setup, you need to clone this repository:
+
+```bash
+# Clone the repository
+git clone https://github.com/AsithaKanchana1/fedora-Setup.git
+
+# Navigate to the project directory
+cd fedora-Setup
+```
+
+Make sure you have `git` installed:
+```bash
+# Install git if not already installed
+sudo dnf install -y git
+```
+
 ## Table of Contents
 
 1. [Prerequisites](#prerequisites)
@@ -62,7 +82,7 @@ mv ~/.cache/nvim ~/.cache/nvim.backup 2>/dev/null || true
 # Create nvim config directory
 mkdir -p ~/.config/nvim
 
-# Copy the configuration from this repository
+# Copy the configuration from the cloned repository
 cp -r ./config/nvim-config/* ~/.config/nvim/
 ```
 
@@ -74,25 +94,84 @@ cp -r ./config/nvim-config/* ~/.config/nvim/
 pip3 install --user python-lsp-server[all] black isort flake8 mypy
 ```
 
-#### For JavaScript/TypeScript Development
+#### For JavaScript/TypeScript/React Development
 ```bash
 # Install Node.js LSP servers
 npm install -g typescript-language-server typescript
 npm install -g @vscode/vscode-langservers-extracted  # HTML, CSS, JSON
+npm install -g vscode-langservers-extracted  # Additional web language support
+```
+
+#### For Web Development (HTML, CSS, JavaScript)
+```bash
+# HTML/CSS/JavaScript language servers (included in vscode-langservers-extracted above)
+# Additional tools for web development
+npm install -g prettier eslint
+npm install -g @tailwindcss/language-server  # For Tailwind CSS support
+```
+
+#### For Java Development
+```bash
+# Java language server will be auto-installed by Mason
+# But you need Java Runtime Environment
+sudo dnf install -y java-latest-openjdk java-latest-openjdk-devel
+```
+
+#### For PHP Development
+```bash
+# Install PHP and Composer
+sudo dnf install -y php php-cli composer
+
+# PHP language server will be auto-installed by Mason
+# Additional PHP tools
+composer global require phpstan/phpstan
+composer global require squizlabs/php_codesniffer
+```
+
+#### For Flutter/Dart Development
+```bash
+# Install Flutter SDK (requires manual download)
+# Download from: https://docs.flutter.dev/get-started/install/linux
+# Or using snap:
+sudo snap install flutter --classic
+
+# Dart language server comes with Flutter SDK
+# Add Flutter to PATH (add to ~/.bashrc or ~/.zshrc)
+export PATH="$PATH:/snap/flutter/current/bin"
+```
+
+#### For C/C++ Development
+```bash
+# Install C/C++ compiler and language server
+sudo dnf install -y gcc gcc-c++ clang clang-tools-extra cmake make
+# clangd is provided by clang-tools-extra
+```
+
+#### For Markdown Support
+```bash
+# Markdown language server and tools
+npm install -g markdownlint-cli
+npm install -g @vscode/markdown-language-features
+```
+
+#### For Lua Development
+```bash
+# Lua language server
 npm install -g lua-language-server
 ```
 
-#### For Other Languages
+#### For Additional Languages
 ```bash
-# Install additional language servers as needed
-# Go
-go install golang.org/x/tools/gopls@latest
+# Go (if needed)
+# sudo dnf install -y golang
+# go install golang.org/x/tools/gopls@latest
 
-# Rust (requires rustup)
-rustup component add rust-analyzer
+# Rust (if needed)
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# rustup component add rust-analyzer
 
-# C/C++
-sudo dnf install clang-tools-extra  # provides clangd
+# Bash/Shell scripting
+npm install -g bash-language-server
 ```
 
 ### Step 4: First Launch
@@ -138,7 +217,7 @@ On first launch:
 
 ### 🔧 Language Server Protocol (LSP)
 - **Auto-installation**: LSP servers installed automatically via Mason
-- **Multi-language Support**: Python, JavaScript, TypeScript, Lua, and more
+- **Multi-language Support**: Python, JavaScript, TypeScript, React, Java, PHP, HTML, CSS, Flutter/Dart, Markdown, C/C++, Lua, and more
 - **Diagnostics**: Real-time error checking and linting
 - **Code Actions**: Automated code fixes and refactoring
 
@@ -148,9 +227,12 @@ On first launch:
 - **Smart Expansion**: Context-aware snippet expansion
 
 ### 📖 File-Type Specific Features
-- **LaTeX**: Mathematical symbol completion
-- **Markdown/Text**: Dictionary word completion
-- **Programming Languages**: Full LSP support with completion, diagnostics, and formatting
+- **Web Development**: Full support for HTML, CSS, JavaScript, TypeScript, and React with auto-completion and syntax highlighting
+- **Backend Languages**: Complete LSP support for Python, Java, PHP, and C/C++ with diagnostics and code actions
+- **Mobile Development**: Flutter/Dart support for cross-platform mobile app development
+- **LaTeX**: Mathematical symbol completion for academic writing
+- **Markdown**: Enhanced editing with live preview and formatting support
+- **All Languages**: LSP-powered completion, diagnostics, formatting, and refactoring tools
 
 ## Keybindings
 
@@ -204,6 +286,42 @@ On first launch:
 sudo dnf install words
 # Or create a symlink if the path is different
 sudo ln -s /usr/share/dict/linux.words /usr/share/dict/words
+```
+
+#### 5. Language-Specific Issues
+
+**Java Language Server Not Working:**
+```bash
+# Ensure Java is properly installed
+java -version
+# If Mason fails to install jdtls, try manual installation
+:MasonInstall jdtls
+```
+
+**PHP Issues:**
+```bash
+# Ensure PHP is in PATH
+php --version
+# For Composer global packages, ensure they're in PATH
+echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+**Flutter/Dart Issues:**
+```bash
+# Verify Flutter installation
+flutter doctor
+# Ensure Dart SDK is available
+dart --version
+```
+
+**TypeScript/React Issues:**
+```bash
+# For project-specific issues, ensure node_modules are installed
+cd your-project
+npm install
+# Or for global TypeScript
+npm install -g typescript
 ```
 
 ### Health Check

@@ -1,5 +1,27 @@
 # Fedora My Theams 
-This Project is for My Personal Use But If Some one can get Help from it all of you are welcome 
+This Project is for My Personal Use But If Some one can get Help from it all of you are welcome
+
+## Getting Started
+
+### Clone the Repository
+
+To get started with this Fedora setup, first clone this repository to your local machine:
+
+```bash
+# Clone the repository
+git clone https://github.com/AsithaKanchana1/fedora-Setup.git
+
+# Navigate to the project directory
+cd fedora-Setup
+```
+
+Make sure you have `git` installed on your system:
+```bash
+# Install git if not already installed
+sudo dnf install -y git
+```
+
+**Note**: Some features like Neovim configuration and Alacritty themes require this repository to be cloned to access configuration files. 
 
 ## Usefull Links 
 - [Cris Titus Tech Linux Utility](https://github.com/ChrisTitusTech/linutil.git)
@@ -38,7 +60,7 @@ sudo dnf install libavcodec-freeworld
 - Appindicator and KSstatusNotifireiterm Support
 - vitals
 - Open Bar (Top Bar Custermization)
-    - [Download Them File](/config/openbar)
+    - [Download Them File](/config/openbar) - requires cloning this repository first
 
 
 [Extention website](https://extensions.gnome.org/extension/7065/tiling-shell/)
@@ -124,12 +146,19 @@ sudo dnf install -y smplayer vlc brave-browser microsoft-edge-stable obs-studio 
 - [Davinchi Resolve](/davinci-resolve-install.md) 
 # Alacrity 
 ## Config file
-i have added current alacrity config files to 
+I have added current alacrity config files to the repository.
+
+**Prerequisites**: Make sure you have cloned this repository first:
+```bash
+git clone https://github.com/AsithaKanchana1/fedora-Setup.git
+cd fedora-Setup
+```
+
+To add those follow instructions:
 - [Alacrity file](/config/alacrity)
 
-to add those follow instructions
-change `asitha` to your user name 
-- Add folowing files to `/home/asitha/.config/alacritty` 
+Change `asitha` to your user name 
+- Add following files to `/home/asitha/.config/alacritty` 
     - alacrity.toml
 - Give permissions to the file 
 ```bash
