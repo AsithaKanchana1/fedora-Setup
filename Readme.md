@@ -53,7 +53,7 @@ sudo dnf install -y git
 - [Cris Titus Tech Linux Utility](https://github.com/ChrisTitusTech/linutil.git)
 - [Video](https://youtu.be/viffvWtMTdo)
 
-- [Git Credential Manager](/git-credential-manager.md)
+- [Git Credential Set Globly ](/set-git-defaults.md)
 
 - [Install **ONLYOFFICE**](/only-office-rpm.md)
 
