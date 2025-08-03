@@ -1,3 +1,15 @@
+# Android Studio 
+This Documentation Contains How i Setup My android studio in My Linux setup and what kind of Challanges I  have faced during my Android Studio Setup and How i Overcome those 
+
+Please If You Have any other Expereances in Android studio Setup and fixing Problems Contribute So this Can Be Helpfull for more Peoples 
+## Conditions To Contributions
+- Please Dont Use AI to Give Solutions 
+- If you are using AI Then Check the solution on your own Setup and if it is working the write with your own words 
+- there is no need for decorations only looking for solutions if any formattings needed i'll let you know or i'll fix 
+
+(The reson for these conditions thet AI Overcomplicate or Most of the time gives Wrong Answers and when AI making Documentation it will  decorate and cant find anything )
+- Simplicity is Key !! 
+
 # Android Studio Install
 ## Installation
 - Install Prerequesists
@@ -28,7 +40,71 @@ cd /opt/android-studio/bin
 ./studio.sh
 ```
 
-## After installation 
+# After installation 
+
+## Opening Android Studio from the current folder
+- So in this step we are going to create alias to android studio that can open project derectry derectly in terminal like when we need to open Some Derecry we use `code` command in terminal or `code .` command to open current derecry in terminal
+
+- in this section we are going to add alias `studio` to `bashc` .
+
+### Locate the android studio installed path 
+- RPM/DNF installes 
+```bash
+/opt/android-studio/bin/studio.sh
+```
+- Manual Installs 
+```bash
+$HOME/android-studio/bin/studio.sh
+```
+
+- Verify if it exist 
+```bash
+ls -l /opt/android-studio/bin/studio.sh   # adjust path if needed
+```
+
+### Put the launcher on your PATH
+
+-let's add `studio.sh` to the  PATH used by your shell
+- Replace the path if you used a different install location
+```bash
+
+echo 'export PATH="/opt/android-studio/bin:$PATH"' >> ~/.bashrc
+```
+- Reload the file for the current terminal session
+```bash
+source ~/.bashrc
+```
+- lets test it
+```bash
+which studio.sh
+```
+- should output /opt/android-studio/bin/studio.sh
+
+### Create one-word alias that opens android studio in current folder
+
+- this will append to same shell startup file `~/.bashrc or ~/.zshrc`
+
+- Open Android Studio in the *current* directory
+```bash
+alias studio='studio.sh .'
+```
+- Reaload Again
+```bash
+source ~/.bashrc
+```
+
+### Usage 
+- Go to folder that you need to oprn in android studio 
+```bash
+cd ~/Projects/MyApp
+```
+- next type following to open android studio 
+
+```bash
+studio  
+```
+- Android Studio now opens ~/Projects/MyApp
+
 ## App Icon Is Not Showing
 This is an problem when android studio installed from downloaded installer (by android studio ) to fix this Follow the steps
 
@@ -205,3 +281,7 @@ chown -R $USER ~/.var/app/com.google.AndroidStudio/
 ```
 	- install android srudio via official site (flatpack and snap version some times has problem since thay run app in sandbox env )
 	- keep android studio upto date
+
+
+
+
