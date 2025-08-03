@@ -1,3 +1,24 @@
+
+
+<!-- toc -->
+
+- [How To Clean Up System Junk](#how-to-clean-up-system-junk)
+  * [Prune unused packages](#prune-unused-packages)
+    + [Remove orphaned packages](#remove-orphaned-packages)
+    + [Delete cached RPMs](#delete-cached-rpms)
+    + [Clear Flatpak leftovers (if you use Flathub)](#clear-flatpak-leftovers-if-you-use-flathub)
+    + [npm/yarn/pnpm cache purge](#npmyarnpnpm-cache-purge)
+    + [Android SDK & emulator housekeeping](#android-sdk--emulator-housekeeping)
+    + [Prune Docker/Podman resources (Document Server, etc.)](#prune-dockerpodman-resources-document-server-etc)
+    + [Vacuum journal logs](#vacuum-journal-logs)
+    + [Purge temporary files](#purge-temporary-files)
+    + [Remove old kernels (if you compile custom ones)](#remove-old-kernels-if-you-compile-custom-ones)
+    + [Analyse large files interactively](#analyse-large-files-interactively)
+    + [Automate future cleanup](#automate-future-cleanup)
+  * [Quick checklist before you start](#quick-checklist-before-you-start)
+
+<!-- tocstop -->
+
 # How To Clean Up System Junk
 
 ## Prune unused packages

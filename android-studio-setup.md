@@ -1,3 +1,31 @@
+
+
+<!-- toc -->
+
+- [Android Studio](#android-studio)
+  * [Conditions To Contributions](#conditions-to-contributions)
+- [Android Studio Install](#android-studio-install)
+  * [Installation](#installation)
+- [After installation](#after-installation)
+  * [Opening Android Studio from the current folder](#opening-android-studio-from-the-current-folder)
+    + [Locate the android studio installed path](#locate-the-android-studio-installed-path)
+    + [Put the launcher on your PATH](#put-the-launcher-on-your-path)
+    + [Create one-word alias that opens android studio in current folder](#create-one-word-alias-that-opens-android-studio-in-current-folder)
+    + [Usage](#usage)
+  * [App Icon Is Not Showing](#app-icon-is-not-showing)
+  * [android studio has an problem when USB debbuging enabled phone connected it dosent show in android studio divices](#android-studio-has-an-problem-when-usb-debbuging-enabled-phone-connected-it-dosent-show-in-android-studio-divices)
+  * [Solution](#solution)
+  * [Connect in android Studio](#connect-in-android-studio)
+  * [Trubleshooting](#trubleshooting)
+    + [Verify **adb divicelsit**](#verify-adb-divicelsit)
+    + [adb device is not Showing](#adb-device-is-not-showing)
+  * [You can build and run your app via USB but the physical device screen is not appearing in Android Studio’s `Running Devices` window on Fedora 42,](#you-can-build-and-run-your-app-via-usb-but-the-physical-device-screen-is-not-appearing-in-android-studios-running-devices-window-on-fedora-42)
+  * [**DirectoryLock$CannotActivateException** in Android Studio](#directorylockcannotactivateexception-in-android-studio)
+    + [How to Fix](#how-to-fix)
+        * [after doing all of above things it worked but when i restart it need to be done again otherwise it will crash](#after-doing-all-of-above-things-it-worked-but-when-i-restart-it-need-to-be-done-again-otherwise-it-will-crash)
+
+<!-- tocstop -->
+
 # Android Studio 
 This Documentation Contains How i Setup My android studio in My Linux setup and what kind of Challanges I  have faced during my Android Studio Setup and How i Overcome those 
 

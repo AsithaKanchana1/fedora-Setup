@@ -1,3 +1,18 @@
+
+
+<!-- toc -->
+
+- [Only Office Install](#only-office-install)
+    + [System - Fedora 42](#system---fedora-42)
+    + [Using the vendor’s native RPM repository](#using-the-vendors-native-rpm-repository)
+  * [Add The ONLYOFFICE REPO](#add-the-onlyoffice--repo)
+  * [Install the Editors](#install-the-editors)
+  * [Launch and Verify](#launch-and-verify)
+- [How to Update](#how-to-update)
+  * [How to Remove ONLYOFFICE](#how-to-remove-onlyoffice)
+
+<!-- tocstop -->
+
 # Only Office Install 
 ### System - Fedora 42
 ###  Using the vendor’s native RPM repository 

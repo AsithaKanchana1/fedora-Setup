@@ -1,3 +1,21 @@
+
+
+<!-- toc -->
+
+- [Davinchi Resolve 20 Installation](#davinchi-resolve-20-installation)
+  * [Tested Setup](#tested-setup)
+  * [Requirements](#requirements)
+  * [Installation](#installation)
+  * [Fixing `zlib` issue](#fixing-zlib-issue)
+    + [Reson for this issue](#reson-for-this-issue)
+  * [Davinchi resolve is not Opening Issue](#davinchi-resolve-is-not-opening-issue)
+      - [Next](#next)
+    + [Fixing the DaVinci Resolve Desktop Launcher icon missing (.desktop file)](#fixing-the-davinci-resolve-desktop-launcher-icon-missing-desktop-file)
+  * [unsupported gpu processing mode](#unsupported-gpu-processing-mode)
+    + [Step-by-Step Guide to Prepare Intel UHD GPU OpenCL for DaVinci Resolve on Fedora 42](#step-by-step-guide-to-prepare-intel-uhd-gpu-opencl-for-davinci-resolve-on-fedora-42)
+
+<!-- tocstop -->
+
 # Davinchi Resolve 20 Installation
 Documented - 2025.07.24
 ## Tested Setup

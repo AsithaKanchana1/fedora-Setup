@@ -1,3 +1,15 @@
+
+
+<!-- toc -->
+
+- [Set Git Defaults On PC](#set-git-defaults-on-pc)
+  * [Tested On](#tested-on)
+  * [Git Requests Credentials Every Time](#git-requests-credentials-every-time)
+  * [Best Solution](#best-solution)
+    + [**Use GitHub CLI Authentication (gh auth login)**](#use-github-cli-authentication-gh-auth-login)
+
+<!-- tocstop -->
+
 # Set Git Defaults On PC 
 ## Tested On
 - Fedora 42 

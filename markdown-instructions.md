@@ -1,4 +1,13 @@
-# Markdown Formatting (Automated Table of Contents(TOC) Workflow
+
+
+<!-- toc -->
+
+
+
+<!-- tocstop -->
+
+# Markdown Formatting 
+## Automated Table of Contents(TOC) Workflow
 
 - This Guide will help to to create script that can create TOC for Markdown files stat to finish 
 
@@ -65,14 +74,11 @@ source ~/.bashrc
 3. Day-to-day usage
 - For a single Markdown file
 ### Inside the folder that contains the file
-```bash
-echo '
 
-<!-- toc -->
+![toc commad](/img/md-img/<!--toc-->.png)
 
 
 
-<!-- tocstop -->
 
 ' | cat - your-file.md > temp && mv temp your-file.md   # add placeholder once
 markdown-toc -i your-file.md                                              # generate or refresh TOC
@@ -85,4 +91,16 @@ update-all-tocs.sh
 -  Ths will automatically finds *.md, updates each TOC
 - Run the script any time after major edits; it rewrites every T O C so links stay accurate.
 
+
+## Usage
+- to use This Script You Have to add following Line in top of the  your `markdown` files 
+
+![toc commad](/img/md-img/<!--toc-->.png)
+
+- if you didnt add that line this script will skip that file 
+
+- to affect all of the files in your current derectry 
+```bash
+update-all-tocs.sh
+```
 

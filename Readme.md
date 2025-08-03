@@ -1,3 +1,29 @@
+
+
+<!-- toc -->
+
+- [Fedora My Theams](#fedora-my-theams)
+  * [Getting Started](#getting-started)
+    + [Clone the Repository](#clone-the-repository)
+  * [Usefull Links](#usefull-links)
+  * [Dependencies](#dependencies)
+  * [Extentions](#extentions)
+  * [Theam Pack](#theam-pack)
+- [After CTT Linux Utility Installation](#after-ctt-linux-utility-installation)
+  * [Softwares](#softwares)
+    + [Complex Installations](#complex-installations)
+- [Alacrity](#alacrity)
+  * [Config file](#config-file)
+  * [Open Alacrity in File Manager](#open-alacrity-in-file-manager)
+    + [To Set Alacrity as default Teminal in File manager](#to-set-alacrity-as-default-teminal-in-file-manager)
+    + [To Set Tabs Like Option on Teminal](#to-set-tabs-like-option-on-teminal)
+      - [`tmux` Usage](#tmux-usage)
+    + [Enable Auto Sudjetions](#enable-auto-sudjetions)
+      - [ble.sh installation](#blesh-installation)
+      - [zhs installation](#zhs-installation)
+
+<!-- tocstop -->
+
 # Fedora My Theams 
 This Project is for My Personal Use But If Some one can get Help from it all of you are welcome
 
