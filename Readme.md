@@ -34,6 +34,8 @@ sudo dnf install -y git
 - [System Junk Cleanup](/system-clean.md)
 
 - [Nvim Setup](/nvim-config.md)
+
+- [markdown Instructions](/markdown-instructions.md)
 ## Dependencies 
 - Codec Install 
 
