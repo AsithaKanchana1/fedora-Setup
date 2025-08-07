@@ -56,6 +56,10 @@ sudo dnf install -y git
 - [Nvim Setup](/nvim-config.md)
 
 - [markdown Instructions](/markdown-instructions.md)
+
+- [University Onedrive Setup on Fedora](/one-drive-sync.md)
+
+
 ## Dependencies 
 - Codec Install 
 
