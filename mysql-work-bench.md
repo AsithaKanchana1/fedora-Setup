@@ -23,16 +23,20 @@ Since fedora offitialy doesent support My Sql Workbench (There is no `flatpack` 
 1. Install Snapd (Snap Package Manager)
 Open your terminal and run
 ```bash
-sudo dnf install snapd
+sudo dnf upgrade --refresh
+sudo dnf install snapd fuse squashfuse kernel-modules -y
+
 ```
 Enable the Snapd socket and restart for good measure:
 
 ```bash
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
+sudo reboot
+
 ```
 
-2. Install MySQL Workbench via Snap
+2. **Install MySQL Workbench via Snap**
 Install using the Snap package:
 
 ```bash
@@ -47,6 +51,8 @@ To ensure it works, launch the application:
 snap run mysql-workbench-community
 ```
 You might see a warning about "`unsupported operating system`"—this is normal on Fedora and can be ignored for standard use.
+
+## If Desktop Shortcut is not created Then Follow Bellow Steps
 
 4. Create a Desktop Shortcut and Menu Icon
 Option 1: 

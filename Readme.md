@@ -59,12 +59,17 @@ sudo dnf install -y git
 
 - [University Onedrive Setup on Fedora](/one-drive-sync.md)
 
+- [Docker GUI Install](/docker-gui.md)
 
 ## Dependencies 
 - Codec Install 
 
 ```bash 
 sudo dnf install libavcodec-freeworld
+```
+- Install pavucontrol to controll audio (blutooth earbuds and other)
+```bash
+sudo dnf install pavucontrol
 ```
 
 ## Extentions 
