@@ -498,7 +498,7 @@ After i have installed and setuped this auto complition tools i have foundout th
       return not (ft == "markdown" or ft == "text")
     end
 -- Other codes 
-
+```
 # Contributing
 
 If you find improvements or fixes:
