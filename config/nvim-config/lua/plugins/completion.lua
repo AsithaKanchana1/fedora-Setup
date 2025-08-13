@@ -1,5 +1,3 @@
--- File: lua/plugins/completion.lua
-
 return {
   "Saghen/blink.cmp",
   version = "1.*",
@@ -35,16 +33,16 @@ return {
       ["<C-p>"] = { "select_prev", "fallback" },
       ["<C-space>"] = { "show", "show_documentation" },
       ["<Tab>"] = {
-	      function(fallback)
-		      if cmp.is_visible() then
-			      cmp.select_next_item()
-		      elseif luasnip.jumpable(1) then
-			      luasnip.jump(1)
-		      else
-			      fallback()
-		      end
-	      end,
-	      "fallback",
+        function(fallback)
+          if cmp.is_visible() then
+            cmp.select_next_item()
+          elseif luasnip.jumpable(1) then
+            luasnip.jump(1)
+          else
+            fallback()
+          end
+        end,
+        "fallback",
       },
       ["<S-Tab>"] = {
         function(fallback)
@@ -86,6 +84,13 @@ return {
       },
     }
 
-    require("blink.cmp").setup(opts)
+    -- Disable autocomplete for markdown and text files
+    opts.enabled = function()
+      local ft = vim.bo.filetype
+      return not (ft == "markdown" or ft == "text")
+    end
+
+    cmp.setup(opts)
   end,
 }
+

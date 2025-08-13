@@ -4,6 +4,7 @@
 
 - [How to Install MySQL Workbench on Fedora Using Snap and Create a Desktop/App Launcher Icon](#how-to-install-mysql-workbench-on-fedora-using-snap-and-create-a-desktopapp-launcher-icon)
   * [Before Installation](#before-installation)
+  * [If Desktop Shortcut is not created Then Follow Bellow Steps](#if-desktop-shortcut-is-not-created-then-follow-bellow-steps)
   * [Unsupported OS Warning?](#unsupported-os-warning)
     + [Uninstalling](#uninstalling)
 

@@ -54,8 +54,8 @@
   * [Backup and Restore](#backup-and-restore)
     + [Creating a Backup](#creating-a-backup)
     + [Restoring from Backup](#restoring-from-backup)
-  * [Contributing](#contributing)
-  * [Additional Resources](#additional-resources)
+- [Removing or add exeption File Formats](#removing-or-add-exeption-file-formats)
+  * [Steps to add exeption file formats](#steps-to-add-exeption-file-formats)
 
 <!-- tocstop -->
 
@@ -480,7 +480,26 @@ rm -rf ~/.config/nvim
 cp -r ~/nvim-config-backup-YYYYMMDD ~/.config/nvim
 ```
 
-## Contributing
+# Removing or add exeption File Formats 
+After i have installed and setuped this auto complition tools i have foundout that my ram consuption is very high . it is oky when i use this tools for more importent tasks like code complitions like that but i am using thnvim as doument editor most of the time so when i editing documents i dont need all the possible language sudgetions so i am going to add exeptions for `.md` and `.txt` file formats and i am not reccomending this tools for low system specs pc users it is not effitience in ram usage 
+
+## Steps to add exeption file formats 
+- since i have used `blink.cmp` we need to edit following files 
+   - ~/.config/nvim/lua/plugins/completion.lua
+   - 
+
+- inside that file you can find section called `-- Disable autocomplete for markdown and text files` and add file formats that you need to add exeptions to your setup like following
+
+```bash
+-- other codes 
+-- Disable autocomplete for markdown and text files
+    opts.enabled = function()
+      local ft = vim.bo.filetype
+      return not (ft == "markdown" or ft == "text")
+    end
+-- Other codes 
+
+# Contributing
 
 If you find improvements or fixes:
 
