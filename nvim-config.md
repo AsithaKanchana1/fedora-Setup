@@ -56,6 +56,8 @@
     + [Restoring from Backup](#restoring-from-backup)
 - [Removing or add exeption File Formats](#removing-or-add-exeption-file-formats)
   * [Steps to add exeption file formats](#steps-to-add-exeption-file-formats)
+- [Contributing](#contributing)
+  * [Additional Resources](#additional-resources)
 
 <!-- tocstop -->
 

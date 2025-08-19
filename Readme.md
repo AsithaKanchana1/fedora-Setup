@@ -61,6 +61,9 @@ sudo dnf install -y git
 
 - [Docker GUI Install](/docker-gui.md)
 
+- [Backup Folder in to Google Drive Automatically](/auto-gdrive-backup.md)
+
+- [Change Gnome Boxes File Location For VMs](/gnome-boxes-vm.md)
 ## Dependencies 
 - Codec Install 
 
