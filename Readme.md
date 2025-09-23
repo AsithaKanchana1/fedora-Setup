@@ -64,6 +64,10 @@ sudo dnf install -y git
 - [Backup Folder in to Google Drive Automatically](/auto-gdrive-backup.md)
 
 - [Change Gnome Boxes File Location For VMs](/gnome-boxes-vm.md)
+
+- [Cisco Packet Tracer Install](https://github.com/thiagoojack/packettracer-fedora)
+
+- [Apache Netbeans 17 Install](/NetBeans-17-install.md)
 ## Dependencies 
 - Codec Install 
 
