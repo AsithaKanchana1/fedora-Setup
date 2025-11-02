@@ -1,0 +1,26 @@
+# G-Copy Setup "App"
+
+This is an interactive setup script to automatically configure a scheduled `rclone` backup service on Fedora, using modern systemd user timers.
+
+## How to Use
+
+1. Save the Script:
+Save the `setup-gcopy.sh` file to your computer 
+
+2. Make it Executable:
+Open your terminal, navigate to where you saved the file, and make it executable:
+
+```bash
+cd ~/Downloads
+chmod +x setup-gcopy.sh
+```
+
+3. Run the "App":
+
+Run the script and follow the on-screen prompts.
+
+```bash
+./setup-gcopy.sh
+```
+
+The script will guide you through checking rclone, configuring it, and setting your backup paths and schedule. It will then create and start the automatic service for you.
