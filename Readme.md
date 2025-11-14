@@ -18,6 +18,8 @@
 # Fedora My Theams 
 This Project is for My Personal Use But If Some one can get Help from it all of you are welcome
 
+> **📁 Repository Structure**: See [STRUCTURE.md](STRUCTURE.md) for detailed information about how this repository is organized.
+
 ## Getting Started
 
 ### Clone the Repository
@@ -45,29 +47,29 @@ sudo dnf install -y git
 
 - [Video](https://youtu.be/viffvWtMTdo)
 
-- [Alacrity Setup](/alacrity-setup.md)
+- [Alacrity Setup](docs/guides/alacrity-setup.md)
 
-- [Git Credential Set Globly ](/set-git-defaults.md)
+- [Git Credential Set Globally](docs/scripts/set-git-defaults.md)
 
-- [Install **ONLYOFFICE**](/only-office-rpm.md)
+- [Install **ONLYOFFICE**](docs/software-setup/only-office-rpm.md)
 
-- [System Junk Cleanup](/system-clean.md)
+- [System Junk Cleanup](docs/scripts/system-clean.md)
 
-- [Nvim Setup](/nvim-config.md)
+- [Nvim Setup](docs/scripts/nvim-config.md)
 
-- [markdown Instructions](/markdown-instructions.md)
+- [Markdown Instructions](docs/scripts/markdown-instructions.md)
 
-- [University Onedrive Setup on Fedora](/one-drive-sync.md)
+- [University OneDrive Setup on Fedora](docs/software-setup/one-drive-sync.md)
 
-- [Docker GUI Install](/docker-gui.md)
+- [Docker GUI Install](docs/software-setup/docker-gui.md)
 
-- [Backup Folder in to Google Drive Automatically](/auto-gdrive-backup.md)
+- [Backup Folder to Google Drive Automatically](docs/scripts/auto-gdrive-backup.md)
 
-- [Change Gnome Boxes File Location For VMs](/gnome-boxes-vm.md)
+- [Change Gnome Boxes File Location For VMs](docs/software-setup/gnome-boxes-vm.md)
 
 - [Cisco Packet Tracer Install](https://github.com/thiagoojack/packettracer-fedora)
 
-- [Apache Netbeans 17 Install](/NetBeans-17-install.md)
+- [Apache NetBeans 17 Install](docs/software-setup/NetBeans-17-install.md)
 ## Dependencies 
 - Codec Install 
 
@@ -208,8 +210,8 @@ sudo dnf install ./flareget-5.0-0.x86_64.rpm
 sudo dnf install -y smplayer vlc brave-browser microsoft-edge-stable obs-studio eduvpn-client firefox code github-desktop
 ```
 ### Complex Installations 
-- [mySql WorkBench](/mysql-work-bench.md)
+- [MySQL WorkBench](docs/software-setup/mysql-work-bench.md)
 
-- [Android studio](/android-studio-setup.md)
+- [Android Studio](docs/software-setup/android-studio-setup.md)
 
-- [Davinchi Resolve](/davinci-resolve-install.md)
+- [DaVinci Resolve](docs/software-setup/davinci-resolve-install.md)
