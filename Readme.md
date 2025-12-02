@@ -70,6 +70,10 @@ sudo dnf install -y git
 - [Cisco Packet Tracer Install](https://github.com/thiagoojack/packettracer-fedora)
 
 - [Apache NetBeans 17 Install](docs/software-setup/NetBeans-17-install.md)
+
+- [Postman Install (System Binaries)](docs/software-setup/postman-installer.md)
+
+- [Affinity Suite on Linux](docs/software-setup/AffinityOn%20Linux.md)
 ## Dependencies 
 - Codec Install 
 

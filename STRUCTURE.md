@@ -24,6 +24,7 @@ fedora-Setup/
 │   │   ├── set-git-defaults.md
 │   │   └── system-clean.md
 │   └── software-setup/         # Software installation guides
+│       ├── AffinityOn Linux.md
 │       ├── android-studio-setup.md
 │       ├── davinci-resolve-install.md
 │       ├── docker-gui.md
@@ -31,7 +32,8 @@ fedora-Setup/
 │       ├── mysql-work-bench.md
 │       ├── NetBeans-17-install.md
 │       ├── one-drive-sync.md
-│       └── only-office-rpm.md
+│       ├── only-office-rpm.md
+│       └── postman-installer.md
 ├── scripts/                     # Executable scripts
 │   └── gcopy/                  # Google Copy scripts
 ├── assets/                      # Static assets
