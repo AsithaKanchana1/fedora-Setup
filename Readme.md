@@ -1,5 +1,3 @@
-
-
 <!-- toc -->
 
 - [Fedora My Theams](#fedora-my-theams)
@@ -74,6 +72,16 @@ sudo dnf install -y git
 - [Postman Install (System Binaries)](docs/software-setup/postman-installer.md)
 
 - [Affinity Suite on Linux](docs/software-setup/AffinityOn%20Linux.md)
+
+- [Kitty Setup](docs/scripts/kitty-setup.md)
+
+### Complex Installations 
+- [MySQL WorkBench](docs/software-setup/mysql-work-bench.md)
+
+- [Android Studio](docs/software-setup/android-studio-setup.md)
+
+- [DaVinci Resolve](docs/software-setup/davinci-resolve-install.md)
+
 ## Dependencies 
 - Codec Install 
 
@@ -213,9 +221,4 @@ sudo dnf install ./flareget-5.0-0.x86_64.rpm
 ```bash
 sudo dnf install -y smplayer vlc brave-browser microsoft-edge-stable obs-studio eduvpn-client firefox code github-desktop
 ```
-### Complex Installations 
-- [MySQL WorkBench](docs/software-setup/mysql-work-bench.md)
 
-- [Android Studio](docs/software-setup/android-studio-setup.md)
-
-- [DaVinci Resolve](docs/software-setup/davinci-resolve-install.md)
