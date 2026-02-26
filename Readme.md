@@ -61,7 +61,9 @@ sudo dnf install -y git
 
 - [Docker GUI Install](docs/software-setup/docker-gui.md)
 
-- [Backup Folder to Google Drive Automatically](docs/scripts/auto-gdrive-backup.md)
+- [Backup Folder to Google Drive Automatically (Fedora)](docs/scripts/auto-gdrive-backup.md)
+
+- [Backup Folder to Google Drive Automatically (Arch / Omarchy)](docs/scripts/auto-gdrive-backup-arch.md)
 
 - [Change Gnome Boxes File Location For VMs](docs/software-setup/gnome-boxes-vm.md)
 
