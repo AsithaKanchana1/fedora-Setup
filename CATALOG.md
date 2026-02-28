@@ -109,9 +109,10 @@ All Arch-specific resources are organized under [arch-based/omachy-setup/](arch-
 ### Arch Configuration Files
 
 #### System Configuration
-- [Waybar Setup](arch-based/omachy-setup/configs/waybar-setup-arch/) - Wayland-compatible taskbar configuration
-  - [Waybar Configuration Guide](arch-based/omachy-setup/configs/waybar-setup-arch/waybar.md)
-  - JSON configuration examples
+- [Waybar Setup](arch-based/omachy-setup/configs/waybar-setup-arch/) - Wayland-compatible taskbar for Hyprland
+  - [Waybar Full Setup Guide](arch-based/omachy-setup/configs/waybar-setup-arch/waybar.md) — Complete setup: module layout, per-module config, CSS theming & troubleshooting
+  - [config.jsonc](arch-based/omachy-setup/configs/waybar-setup-arch/config.jsonc) — Full bar configuration (CPU → RAM → Network → Bluetooth → Audio → Tray → Battery)
+  - [style.css](arch-based/omachy-setup/configs/waybar-setup-arch/style.css) — Pill-effect styling with Nord colour palette & hover states
 
 #### Backup Tools
 - [Rclone Backup Configuration](arch-based/omachy-setup/configs/reclon-bkp/) - Google Drive backup helper
@@ -149,6 +150,9 @@ fedora-Setup/
 │   └── omachy-setup/               # Omarchy-specific setup
 │       ├── configs/                 # Arch-specific configs
 │       │   ├── waybar-setup-arch/  # Waybar configuration
+│       │   │   ├── waybar.md       # Full setup guide
+│       │   │   ├── config.jsonc    # Bar configuration
+│       │   │   └── style.css       # Pill-effect CSS theme
 │       │   └── reclon-bkp/         # Rclone backup config
 │       ├── docs/                    # Arch-specific docs
 │       │   ├── guides/
@@ -219,6 +223,6 @@ When adding new documentation or configuration:
 
 ---
 
-*Last Updated: February 2026*
+*Last Updated: February 2026 — Added comprehensive Waybar setup documentation*
 *For usage instructions, see [README.md](README.md)*
 *Created By : Asitha Kanchana Palliyaguru*

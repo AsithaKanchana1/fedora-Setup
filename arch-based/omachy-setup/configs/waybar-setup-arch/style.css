@@ -1,0 +1,30 @@
+/* ══════════════════════════════════════════════════════════════════════════════
+   Waybar Stylesheet — Omarchy / Arch Linux / Hyprland
+   Path: ~/.config/waybar/style.css
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+/* ── Standard Module Styling (Pill Effect) ────────────────────────────────── */
+#cpu,
+#memory,
+#network,
+#bluetooth,
+#pulseaudio,
+#battery {
+    padding: 0 12px;
+    margin: 0 4px;
+    background-color: #2e3440; /* Nord-style Dark Grey */
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+/* ── Hover Effects ────────────────────────────────────────────────────────── */
+#cpu:hover,
+#memory:hover,
+#network:hover {
+    background-color: #3b4252;
+}
+
+/* ── Network Alert State ──────────────────────────────────────────────────── */
+#network.disconnected {
+    color: #bf616a; /* Nord red — alerts on no connection */
+}
