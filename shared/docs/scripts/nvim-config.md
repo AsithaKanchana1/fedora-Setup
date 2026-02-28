@@ -146,7 +146,7 @@ mv ~/.cache/nvim ~/.cache/nvim.backup 2>/dev/null || true
 mkdir -p ~/.config/nvim
 
 # Copy the configuration from the cloned repository
-cp -r ./config/nvim-config/* ~/.config/nvim/
+cp -r ./shared/configs/nvim-config/* ~/.config/nvim/
 ```
 
 ### Step 3: Install Language Servers and Tools
@@ -505,7 +505,7 @@ After i have installed and setuped this auto complition tools i have foundout th
 
 If you find improvements or fixes:
 
-1. Update the configuration files in `config/nvim-config/`
+1. Update the configuration files in `shared/configs/nvim-config/`
 2. Update this documentation
 3. Test the changes on a fresh system
 4. Commit and push to the repository
@@ -520,6 +520,6 @@ If you find improvements or fixes:
 
 ---
 
-**Last Updated**: August 2025
-**Tested On**: Fedora 40+
+**Last Updated**: February 2026
+**Tested On**: Fedora 40+ / Arch Linux (Omarchy)
 **Neovim Version**: 0.10+

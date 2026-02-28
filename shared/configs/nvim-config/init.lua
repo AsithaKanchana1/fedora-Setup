@@ -1,7 +1,7 @@
 -- File: init.lua
 
 -- Bootstrap lazy.nvim
-local lazypath = vim.fn.stdpath("data").. "/lazy/lazy.nvim"
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -19,3 +19,12 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
 -- You can keep any other settings (vim.opt, vim.g, keymaps) here.
+--
+-- Show backticks and markdown markers at all times
+vim.opt.conceallevel = 0
+
+-- Disable triple backtick autopairing
+local status, npairs = pcall(require, "nvim-autopairs")
+if status then
+  npairs.remove_rule("```")
+end

@@ -1,0 +1,1 @@
+/home/asitha/.config/omarchy/current/theme/neovim.lua
