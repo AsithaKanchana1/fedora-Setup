@@ -104,13 +104,14 @@ All Arch-specific resources are organized under [arch-based/omachy-setup/](arch-
   - Real-time progress display
 
 #### Software Installation
-*(Software guides applicable to Arch systems)*
+- [Docker & Windows VM — Disable Auto-Start](arch-based/omachy-setup/docs/software-setup/docker-windows-vm.md) - Stop the `omarchy-windows` container and disable background Docker services to reclaim ~4 GB of RAM at boot; includes a `start-win` / `stop-win` alias for on-demand use
 
 ### Arch Configuration Files
 
 #### System Configuration
 - [Waybar Setup](arch-based/omachy-setup/configs/waybar-setup-arch/) - Wayland-compatible taskbar for Hyprland
-  - [Waybar Full Setup Guide](arch-based/omachy-setup/configs/waybar-setup-arch/waybar.md) — Complete setup: module layout, per-module config, CSS theming & troubleshooting
+  - [Waybar Omarchy Replication Guide](arch-based/omachy-setup/configs/waybar-setup-arch/waybar-config-omarchy.md) — **Start here on a fresh install** — phased guide: install deps → deploy config & CSS → create launch script → register with Hyprland → troubleshoot
+  - [Waybar Full Setup Guide](arch-based/omachy-setup/configs/waybar-setup-arch/waybar.md) — In-depth reference: module layout, per-module config, CSS theming & troubleshooting
   - [config.jsonc](arch-based/omachy-setup/configs/waybar-setup-arch/config.jsonc) — Full bar configuration (CPU → RAM → Network → Bluetooth → Audio → Tray → Battery)
   - [style.css](arch-based/omachy-setup/configs/waybar-setup-arch/style.css) — Pill-effect styling with Nord colour palette & hover states
 
@@ -150,6 +151,7 @@ fedora-Setup/
 │   └── omachy-setup/               # Omarchy-specific setup
 │       ├── configs/                 # Arch-specific configs
 │       │   ├── waybar-setup-arch/  # Waybar configuration
+│       │   │   ├── waybar-config-omarchy.md  # Replication guide (start here)
 │       │   │   ├── waybar.md       # Full setup guide
 │       │   │   ├── config.jsonc    # Bar configuration
 │       │   │   └── style.css       # Pill-effect CSS theme
@@ -199,6 +201,7 @@ Some resources have distribution-specific implementations:
 | Automated Google Drive Backup | [Fedora Version](fedora-base/docs/scripts/auto-gdrive-backup.md) | [Arch Version](arch-based/omachy-setup/docs/scripts/auto-gdrive-backup-arch.md) |
 | Neovim Setup | [Shared Setup](shared/docs/scripts/nvim-config.md) | [Shared Setup](shared/docs/scripts/nvim-config.md) |
 | Alacritty Terminal | [Shared Config](shared/docs/guides/alacrity-setup.md) | [Shared Config](shared/docs/guides/alacrity-setup.md) |
+| Docker / Windows VM | [Docker Desktop GUI](fedora-base/docs/software-setup/docker-gui.md) | [Disable Auto-Start](arch-based/omachy-setup/docs/software-setup/docker-windows-vm.md) |
 
 ---
 
@@ -223,6 +226,6 @@ When adding new documentation or configuration:
 
 ---
 
-*Last Updated: February 2026 — Added comprehensive Waybar setup documentation*
+*Last Updated: March 2026 — Added `waybar-config-omarchy.md` replication guide (phased install reference); updated Waybar section index*
 *For usage instructions, see [README.md](README.md)*
 *Created By : Asitha Kanchana Palliyaguru*
